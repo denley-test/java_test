@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  java_test:
+    build: .
+    image: denley/java_test
+    working_dir: /opt/app
+    entrypoint: /opt/app/docker-entrypoint.sh
+    volumes:
+      - .:/opt/app
